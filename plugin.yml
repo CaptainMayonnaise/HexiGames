@@ -1,0 +1,24 @@
+name: HexiGames
+main: com.hexicraft.games.HexiGames
+version: 0.1
+description: An automatic minigames hosting plugin.
+depend: [Vault, Essentials, WorldEdit]
+commands:
+  games:
+    description: Gives information about HexiTrade.
+    usage: /trade [arg]
+    permission: hexigames.user
+    permission-message: You don't have permission to do this.
+    aliases: [hexigames, hg]
+  creategame:
+    description: Sets up a game of a preconfigured type.
+    usage: /creategame [args]
+    permission: hexigames.admin
+    permission-message: You don't have permission to do this.
+    aliases: [cgame, createg, cg]
+  joingame:
+    description: Teleports you to the current game.
+    usage: /joingame
+    permission: hexigames.user
+    permission-message: You don't have permission to do this.
+    aliases: [jgame, joing, jg]
